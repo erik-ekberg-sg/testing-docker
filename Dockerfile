@@ -8,3 +8,5 @@ COPY package.json package-lock.json ./
 RUN npm install
 
 ENV NODE_ENV=${NODE_ENV}
+
+CMD [ "npm", "run", "start" ]
